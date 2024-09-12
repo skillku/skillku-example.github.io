@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+/* Navbar */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 0 #aaa;
+}
+
+nav img {
+  width: auto;
+  height: 30px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0053BA;
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+
+nav a:hover {
+  color: #4b89d4;
+}
+
+/* Header */
+
+header {
+  background: url('/assets/images/bg-banner.webp');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding-top: 50px; */
+  min-height: 100vh;
+}
+
+.banner-container {
+  width: 60%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-banner {
+  width: 45%;
+}
+
+.text-banner h1 {
+  color: rgba(0, 114, 255, 1);
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.text-banner p {
+  font-size: 20px;
+  padding: 15px 0px;
+  font-weight: 500;
+  
+}
+
+.text-banner button {
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 114, 255, 1);
+  font-size: 16px;
+  color: rgba(0, 114, 255, 1);
+  font-weight: 400;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.text-banner button:hover {
+  background-color: rgba(0, 114, 255, 1);
+  color: white;
+}
+
+/* section tentang kami */
+
+#tentang-kami {
+  width: 100%;
+  min-height: 100vh;
+  background: url('/assets/images/bg-about.webp');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#tentang-kami img {
+  width: 600px;
+  height: auto;
+}
+
+#tentang-kami article {
+  padding-left: 50px;
+  width: 30%;
+}
+#tentang-kami h1 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+#tentang-kami p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 8px;
+  font-weight: 500;
+  color: #413f3f;
+}
+#tentang-kami span {
+  font-weight: 700;
+  transform: capitalize;
+  color: rgb(0, 98, 218);
+}
+
+
+/* visi-misi */
+
+.visi-misi {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url('/assets/images/bg-visi.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.visi-misi .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.visi-misi img {
+  width: 400px;
+}
+
+.visi-misi ul {
+  list-style-image: url('/assets/icons/arrow-right-icon.png');
+}
+
+.visi-misi li {
+  letter-spacing: .5px;
+  font-size: 22px;
+  padding: 10px 8px;
+  font-weight: 600;
+}
+
+
+
+
+/* Nilai */
+
+.nilai {
+  min-height: 100vh;
+  background: url('/assets/images/BG.webp');
+  /* background-position: center ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading-nilai {
+  width: 50%;
+  margin-bottom: 70px;
+}
+
+.heading-nilai span {
+  color: #ffaa00;
+}
+
+.heading-nilai h1 {
+  color: #0072FF;
+}
+
+.heading-nilai p {
+  font-weight: 500;
+  color: rgb(60, 68, 102);
+}
+
+.nilai .card {
+  color: #fff;
+  width: 250px;
+  height: 320px;
+  background-color: #0864d4;
+  cursor: pointer;
+  transition: all 0.3s ease-out; 
+  border-radius: 20px;
+}
+
+.nilai .card:hover {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(1.2);
+  background-color: #fff;
+  color: #0864d4;
+}
+
+.nilai .card:hover .running {
+  content: url('/assets/icons/running-blue.svg');
+}
+
+.nilai .card:hover .hands {
+  content: url('/assets/icons/hands-blue.svg');
+}
+
+.nilai .card:hover .hands {
+  content: url('/assets/icons/hands-blue.svg');
+}
+
+.nilai .card:hover .circle {
+  content: url('/assets/icons/circle-blue.svg');
+}
+
+
+/* Contact */
+
+.contact {
+  padding: 50px 0px;
+  background: url('/assets/images/bg-call.webp');
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+
+/* Footer */
+footer {
+  color: rgba(62, 64, 115, 1);
+}
+
+footer hr {
+  width: 30px;
+  border: 3px solid #ffab04;
+  opacity: 1;
+}
+
+footer .copyright {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+}
+
+.footer-info {
+  padding: 70px 0px;
+}
+
+.menu-footer a {
+  text-decoration: none;
+  color: rgba(62, 64, 115, 1);
+  font-size: 18px;
+}
+
+.menu-footer li {
+  padding-bottom: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1300px) { 
+
+  /* header */
+  .banner-container {
+    width: 80%;
+    height: 80vh;
+  }
+  .text-banner {
+    width: 60%;
+  }
+  .text-banner h1 {
+    font-size: 40px;
+  }
+  
+  .text-banner p {
+    font-size: 18px;
+  }
+
+  /* tentang kami */
+  #tentang-kami img {
+    width: 450px;
+    height: auto;
+  }
+
+  #tentang-kami article {
+    width: 50%;
+  }
+
+}
+@media screen and (max-width: 770px) {
+
+  /* header */
+  nav img {
+    width: auto;
+    height: 20px;
+  }
+  
+
+  .text-banner {
+    width: 70%;
+  }
+
+  #tentang-kami {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  #tentang-kami img {
+    width: 350px;
+    height: auto;
+  }
+  
+  #tentang-kami article {
+    padding-top: 50px;
+    padding-left: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  #tentang-kami h1 {
+    padding-top: 8px;
+  }
+  
+  #tentang-kami p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #tentang-kami span {
+    font-size: 15px;
+  }
+
+  /* visi misi */
+  .visi-misi img {
+    width: 300px;
+  }
+
+  .visi-misi li {
+    font-size: 20px;
+  }
+  .heading-nilai {
+    width: 50%;
+    margin-bottom: 70px;
+  }
+  .heading-nilai {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* navbar */
+  
+
+  /* header */
+  .text-banner {
+    width: 80%;
+  }
+
+  .text-banner h1 {
+    font-size: 25px;
+  }
+  
+  .text-banner p {
+    font-size: 14px;
+    padding: 0px;
+  }
+
+  .text-banner button {
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  /* tentang-kami */
+  #tentang-kami img {
+    width: 300px;
+    height: auto;
+  }
+
+  #tentang-kami article {
+    padding-top: 50px;
+  }
+
+  #tentang-kami p {
+    font-size: 16px;
+  }
+
+  /* visi misi */
+  .visi-misi img {
+    width: 200px;
+  }
+
+  .visi-misi li {
+    font-size: 18px;
+    padding: 8px 0px;
+  }
+
+  .heading-nilai {
+    width: 90%;
+  }
+  
+}
