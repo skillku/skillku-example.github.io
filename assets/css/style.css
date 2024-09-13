@@ -294,7 +294,7 @@ footer p {
 
 
 /* Responsive */
-@media screen and (max-width: 1300px) { 
+@media only screen and (max-width: 1300px) { 
 
   /* header */
   .banner-container {
@@ -323,14 +323,13 @@ footer p {
   }
 
 }
-@media screen and (max-width: 770px) {
+@media only screen and (max-width: 770px) {
 
   /* header */
   nav img {
     width: auto;
     height: 20px;
   }
-  
 
   .text-banner {
     width: 70%;
@@ -385,9 +384,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 480px) {
-  /* navbar */
-  
+@media only screen and (max-width: 480px) {
 
   /* header */
   .text-banner {
